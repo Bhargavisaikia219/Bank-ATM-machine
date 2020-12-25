@@ -10,7 +10,7 @@ int  main()
   printf("******** Welcome to ABC bank ******** \n");
   printf("Please enter your 4 digit pin number: \n");
   scanf("%d",&pin);
-    if(pin != 1234)
+    if(pin != 1234) //pin considered for this coding=1234
    {
        printf("Incorrect pin.Please enter your pin correctly \n");
    }
