@@ -42,7 +42,9 @@ int ATM_Transaction()
       {
         ATM_Transaction();// call our transaction method here
       }
-     break;
+    else
+      printf("Thank you for using ATM services\n");
+    break;
 
     case 2:// Second option should be for withdrawal
     printf("Please enter amount to withdraw: ");
@@ -54,12 +56,14 @@ int ATM_Transaction()
      printf("Your available balance is %lf\n",balance);
      printf("\n\nDo you want to try another transaction?\n Press 1 to proceed and 2 to exit\n\n");
      scanf("%d", &anotherTransaction);
-       if(anotherTransaction == 1)
+     if(anotherTransaction == 1)
         {
              ATM_Transaction();  // call our ATM_Transaction method here
         }
-    }
      else
+      printf("Thank you for using ATM services\n");
+    }
+    else
     {
        printf("Sorry in-sufficient balance in your account");
        printf("\n\nDo you want to perform another transaction?\n Press 1 to proceed and 2 to exit\n\n");
@@ -68,6 +72,8 @@ int ATM_Transaction()
         {
              ATM_Transaction();  // call our ATM_Transaction method here
         }
+       else
+      	printf("Thank you for using ATM services\n");
     }
     break;
 
@@ -82,6 +88,8 @@ int ATM_Transaction()
      {
         ATM_Transaction(); // call our transaction method here
      }
+    else
+     printf("Thank you for using ATM services\n");
     break;
     default:
      printf("Thank you for using ATM services\n");
